@@ -1,0 +1,89 @@
+/* General Container Styling */
+.container {
+  background-color: var(--secondaryBgColor);
+  padding: var(--paddingLarge);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: var(--paddingLarge) auto;
+  max-width: 800px;
+}
+
+/* Title Styling */
+.title {
+  font-size: var(--fontHeading);
+  color: var(--headingColor);
+  text-align: center;
+  margin-bottom: var(--paddingMedium);
+}
+
+/* Headline List Styling */
+.headlineList {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Individual Headline Item Styling */
+.headlineItem {
+  padding: var(--paddingMedium);
+  margin-bottom: var(--paddingMedium);
+  background-color: var(--mainBgColor);
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.headlineItem:hover {
+  background-color: var(--messageOutBgColor);
+}
+
+/* Headline Title Styling */
+.headlineTitle {
+  font-size: var(--fontSubHeading);
+  color: var(--headingColor);
+  margin-bottom: var(--paddingSmall);
+}
+
+/* Headline Source and Date Styling */
+.headlineDetails {
+  font-size: var(--fontSmall);
+  color: var(--textColor);
+  display: flex;
+  justify-content: space-between;
+}
+
+.headlineSource {
+  font-weight: bold;
+}
+
+.headlineDate {
+  font-style: italic;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: var(--paddingMedium);
+  }
+
+  .headlineItem {
+    padding: var(--paddingSmall);
+  }
+
+  .headlineTitle {
+    font-size: var(--fontBody);
+  }
+
+  .headlineDetails {
+    font-size: var(--fontSmall);
+    flex-direction: column;
+  }
+}
+
+.headlineLink {
+  text-decoration: none;
+  color: var(--linkColor);
+  transition: color 0.3s ease;
+}
+
+.headlineLink:hover {
+  color: var(--buttonBgColor);
+}

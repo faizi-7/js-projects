@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* CSS Themes Colors */
+:root {
+  --mainBgColor: #e5ddd5;
+  --secondaryBgColor: #ffffff;
+  --headerBgColor: #075e54;
+  --headerTextColor: #ffffff;
+  --headingColor: #075e54;
+  --textColor: #4a4a4a;
+  --linkColor: #34b7f1;
+  --buttonBgColor: #25d366;
+  --buttonTextColor: #ffffff;
+  --inputBgColor: #f0f0f0;
+  --inputBorderColor: #dddddd;
+  --inputFocusBorderColor: #34b7f1;
+  --messageOutBgColor: #dcf8c6;
+  --messageInBgColor: #ffffff;
+}
+/* Paddings */
+:root {
+  --paddingSmall: 8px;
+  --paddingMedium: 16px;
+  --paddingLarge: 24px;
+  --paddingXlarge: 32px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --paddingSmall: 6px;
+    --paddingMedium: 12px;
+    --paddingLarge: 18px;
+    --paddingXlarge: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --paddingSmall: 8px;
+    --paddingMedium: 14px;
+    --paddingLarge: 20px;
+    --paddingXlarge: 28px;
+  }
+}
+
+/* Font Sizes */
+:root {
+  --fontHeading: 24px; 
+  --fontSubHeading: 20px;
+  --fontBody: 16px;
+  --fontSmall: 14px;
+}
+
+h1 {
+  font-size: var(--fontHeading);
+}
+
+h2 {
+  font-size: var(--fontSubHeading);
+}
+
+p {
+  font-size: var(--fontBody);
+}
+
+small {
+  font-size: var(--fontSmall);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fontHeading: 20px;
+    --fontSubHeading: 18px;
+    --fontBody: 14px;
+    --fontSmall: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --fontHeading: 22px;
+    --fontSubHeading: 19px;
+    --fontBody: 15px;
+    --fontSmall: 13px;
+  }
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}

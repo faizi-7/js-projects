@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondaryBgColor);
+  height: 80vh;
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  font-size: var(--fontHeading);
+  color: var(--headingColor);
+  margin-bottom: var(--paddingMedium);
+}
+
+.subtitle {
+  font-size: var(--fontSubHeading);
+  color: var(--textColor);
+  margin-bottom: var(--paddingLarge);
+}
+
+.ctaButton {
+  padding: var(--paddingMedium) var(--paddingXlarge);
+  font-size: var(--fontBody);
+  background-color: var(--buttonBgColor);
+  color: var(--buttonTextColor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: var(--buttonBgColor);
+}

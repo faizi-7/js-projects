@@ -1,0 +1,72 @@
+
+.navbar {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--paddingMedium);
+  background-color: var(--mainBgColor);
+  color: var(--textColor);
+  font-size: var(--fontBody);
+}
+
+.brand {
+  font-size: var(--fontSubHeading);
+  font-weight: 500;
+}
+
+.toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--textColor);
+  font-size: var(--fontHeading);
+  cursor: pointer;
+}
+
+/* Default menu styles */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: var(--paddingMedium);
+  margin: 0;
+  padding: 0;
+}
+
+
+.menu .item a {
+  color: var(--linkColor);
+  text-decoration: none;
+  font-size: var(--fontBody);
+}
+
+.menu .item a:hover {
+  color: var(--linkHoverColor);
+}
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+
+  .menu {
+    margin: 0 var(--paddingXlarge);
+    display: flex;
+    flex-direction: column;
+    gap: var(--paddingSmall);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: var(--mainBgColor);
+    max-height: 0;
+    overflow: hidden;
+    width: calc(100vw - 2 * var(--paddingXlarge));
+    transition: max-height 0.3s ease;
+  }
+
+  .menuOpen {
+    max-height: 300px;
+  }
+  .menu .item {
+    padding: 20px;
+  }
+}
